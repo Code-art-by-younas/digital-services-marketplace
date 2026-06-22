@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Internship from './pages/Internship';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import PlanDetail from './pages/PlanDetail'; // ✅ Import
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route path="/internship" element={<Internship />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          {/* ✅ Plan Detail Route */}
+          <Route path="/plan/:planId" element={<PlanDetail />} />
         </Routes>
       </main>
       <Footer />
